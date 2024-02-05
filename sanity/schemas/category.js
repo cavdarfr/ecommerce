@@ -13,5 +13,20 @@ export const category = {
       title: 'Description',
       type: 'text',
     },
+    {
+      name: 'slug',
+      title: 'Slug',
+      type: 'slug',
+      options: {
+        source: 'title',
+        maxLength: 96,
+      },
+    },
+    {
+      name: 'visible',
+      title: 'Visible',
+      type: 'boolean',
+      initialValue: true,
+    }
   ],
 }

@@ -1,3 +1,29 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+html,
+main,
+:root {
+    height: 100%
+}
+
+@layer base {
+    h1 {
+        @apply text-7xl font-semibold
+    }
+
+    h2 {
+        @apply text-4xl font-medium
+    }
+
+    h3 {
+        @apply text-2xl font-medium
+    }
+}
+
+@layer components {
+    .section {
+        @apply max-w-7xl min-h-screen md:h-[80vh] mx-auto flex flex-col justify-center gap-5 px-5 sm:px-4 md:px-6 py-10
+    }
+}
